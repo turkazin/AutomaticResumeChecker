@@ -1,0 +1,31 @@
+Position: Junior Backend Developer
+We seek a motivated Junior Backend Developer with 3+ years experience in Python web frameworks.
+Required: Bachelor's in CS or related. Skills: Python, Django/Flask, SQL/PostgreSQL, Git, Docker, AWS basics.
+
+
+
+
+Position: Junior Network Engineer
+Looking for a Junior Network Engineer with 4+ years in routing and cloud networking.
+Required: Master's preferred. Skills: OSPF/BGP, TCP/IP, Python, Linux, AWS VPC, Wireshark.
+
+
+Position: Data Analyst
+Hiring a Data Analyst with 4+ years in BI tools and analytics.
+Required: Master's in Stats/Analytics. Skills: Tableau/Power BI, SQL, Python (pandas), Excel, statistical modeling.
+
+
+
+Position: Junior DevOps Engineer
+Seeking Junior DevOps Engineer with 3+ years in cloud automation.
+Required: Bachelor's in Engineering. Skills: AWS EC2/S3, Kubernetes/Docker, Terraform, Python, Jenkins.
+
+
+Position: Frontend Developer
+Hiring Frontend Developer with 4+ years in modern JS frameworks.
+Required: Bachelor's in Design/CS. Skills: React/Next.js, JavaScript, Redux, GraphQL, Figma.
+
+
+Position: Cybersecurity Analyst
+Need Cybersecurity Analyst with 5+ years in threat detection.
+Required: Master's in IT/Security. Skills: Splunk/Nessus, Python, AWS Security, NIST, Wireshark.
