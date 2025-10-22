@@ -13,29 +13,32 @@ git clone https://github.com/turkazin/AutomaticResumeChecker.git
 - Версия Python: 3.11.9
 - Версия pip: 24.3.1
 
-1. Откройте папку с файлами `AutomaticResumeChecker`.
+1. Откройте папку с файлами
+  ```bash
+   cd AutomaticResumeChecker
+   ```
 
-2. Создайте виртуальное окружение:
+3. Создайте виртуальное окружение:
    ```bash
    python -m venv venv
    ```
 
-3. Активируйте окружение:
+4. Активируйте окружение:
    ```bash
    .\venv\Scripts\activate
    ```
 
-4. После активации окружения, установите необходимые пакеты:
+5. После активации окружения, установите необходимые пакеты:
    ```bash
    pip install -r requirements.txt
    ```
 
-5. Установите модель spaCy:
+6. Установите модель spaCy:
    ```bash
    python -m spacy download en_core_web_lg
    ```
 
-6. Для запуска:
+7. Для запуска:
    ```bash
    streamlit run app.py
    ```
