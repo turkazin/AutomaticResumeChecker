@@ -18,27 +18,27 @@ git clone https://github.com/turkazin/AutomaticResumeChecker.git
    cd AutomaticResumeChecker
    ```
 
-3. Создайте виртуальное окружение:
+2. Создайте виртуальное окружение:
    ```bash
    python -m venv venv
    ```
 
-4. Активируйте окружение:
+3. Активируйте окружение:
    ```bash
    .\venv\Scripts\activate
    ```
 
-5. После активации окружения, установите необходимые пакеты:
+4. После активации окружения, установите необходимые пакеты:
    ```bash
    pip install -r requirements.txt
    ```
 
-6. Установите модель spaCy:
+5. Установите модель spaCy:
    ```bash
    python -m spacy download en_core_web_lg
    ```
 
-7. Для запуска:
+6. Для запуска:
    ```bash
    streamlit run app.py
    ```
