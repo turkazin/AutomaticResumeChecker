@@ -5,7 +5,7 @@ from io import BytesIO
 from dateutil import parser as date_parser
 from datetime import datetime
 import spacy
-from spacy.pipeline import EntityRuler  # Импорт не меняется, но использование — да
+from spacy.pipeline import EntityRuler  
 import pandas as pd
 import os
 
@@ -35,7 +35,6 @@ def load_skills_patterns(csv_path='skills.csv'):
         if skill not in [p['pattern'][0]['LOWER'] for p in patterns]:
             patterns.append({"label": "SKILL", "pattern": [{"LOWER": skill}]})
     
-    # Исправление: Создаём и добавляем EntityRuler по имени фабрики
     config = {"overwrite_ents": False}
     ruler = nlp.add_pipe("entity_ruler", config=config, before="ner")
     ruler.add_patterns(patterns)
@@ -110,7 +109,7 @@ def extract_resume_data(text):
     phone = re.search(phone_pattern, text)
     phone = phone.group() if phone else "Not found"
     
-    # Skills (без изменений)
+    # Skills 
     skills_text = "Not found"
     skills_match = re.search(r'Skills?\s*(.+?)(?=\s*(Languages?|Certificates?|Projects?|\Z))', text, re.DOTALL | re.IGNORECASE)
     if skills_match:
@@ -121,7 +120,7 @@ def extract_resume_data(text):
     if skill_ents:
         skills_text += f" (NER: {' '.join(set(skill_ents))})" if skills_text != "Not found" else ' '.join(set(skill_ents))
     
-    # Experience (без изменений)
+    # Experience 
     exp_years = 0
     work_match = re.search(r'Work Experience?\s*(.+?)(?=\s*(Skills?|Education|\Z))', text, re.DOTALL | re.IGNORECASE)
     if work_match:
@@ -141,7 +140,7 @@ def extract_resume_data(text):
     exp_years += sum(int(y) for y, _, _ in exp_fallback)
     exp_years = round(max(0, exp_years), 1)
     
-    # Education (без изменений)
+    # Education 
     education_patterns = ['bachelor', 'master', "bachelor's", "master's", 'phd', 'doctorate']
     found_edu = [pat for pat in education_patterns if pat in text.lower()]
     education = ', '.join(set(found_edu)) if found_edu else "Not found"
